@@ -20,7 +20,7 @@ The following **optional** features are implemented:
 * [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
-
+https://i.imgur.com/tKBNCsd.gifv
 ![Alt text](<Cunningham Prework - Sea Monster Crowdfunding.gif>)
 
 Here's a walkthrough of implemented features:
