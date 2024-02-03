@@ -158,6 +158,8 @@ showAllGames();
  * Skills used: template literals, ternary operator
 */
 
+// calculate the remaining unfunded games
+const remainingUnfundedGames = GAMES_JSON.filter(game => game.pledged < game.goal).length;
 
 // grab the description container
 const descriptionContainer = document.getElementById("description-container");
@@ -168,10 +170,10 @@ descriptionContainer.appendChild(newParagraph);
 // use filter or reduce to count the number of unfunded games
 const unfundedGamesCount = GAMES_JSON.filter(game => game.pledged < game.goal).length;
 
-
-
 // create a string that explains the number of unfunded games using the ternary operator
 const unfundedGamesText = `${unfundedGamesCount} game${unfundedGamesCount === 1 ? '' : 's'} not yet funded`;
+const displayStr = `A total of $${raised.toLocaleString('en-US')} has been raised for ${games} games. Currently ${unfunded_count} ${unfunded_count > 1 ? "games remain" : "game remains"}
+         unfunded. We need your help to fund these amazing games!`
 
 
 // create a new DOM element containing the template string and append it to the description container
